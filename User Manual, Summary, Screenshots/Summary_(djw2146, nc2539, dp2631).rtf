@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl288\slmult1\pardirnatural
+
+\f0\fs24 \cf0 Summary \'96 Chip8 Emulator\
+Coded by David Watkins (djw2146), Nai Chen Chang (nc2539), and Dhruv Purushottam (dp2631)\
+\
+This project is designed to create an chip8 emulator in java.\
+Chip8 is a programming language that was created in the 1980s to make it easier to code old-school games like tetris and pong. In our project, we've converted this code to java. We used several guidelines from this website: {\field{\*\fldinst{HYPERLINK "http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/"}}{\fldrslt http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/}}\
+\
+What an emulator essentially does is allow you to play games on your computer that aren't programmed for your computer otherwise. Nintendo Gameboy emulators are the most common of these and are used to play gameboy games on computers, thereby allowing for a console shift.\
+\
+In our code, we have implemented:\
+\
+1. Interfaces:\
+Class Chip8 implements the interface CPU. \
+KeyListenerClass implements KeyListener\
+State implements Serializable\
+Window implements ActionListener\
+\
+2. Inheritance: \
+Window extends JPanel\
+\
+(For more information on 1 and 2, refer to code)\
+\
+3. Design Patterns:\
+\
+Iterator pattern: \
+The program uses the iterator design pattern in several ways. It iterates through bytes from the ROM files (the ROM files could be seen as an aggregate of bytes) in order to create the game on the provided display, which is done by iteratively manipulating pixels (the graphics frame is an aggregate of pixels).\
+\
+Facade pattern: \
+Our program is run via the Chip8Runner class, from which the user doesn't need to know any other details, such as how the ApplicationLoader class reads the file. As such, it simplifies the user interface to a great degree.\
+\
+AND\
+\
+1. Java Graphics \'96 Window deal with java graphics in great detail, building on what we have been through in class. Our project essentially depends on graphics, since it is a game emulator.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl288\slmult1\pardirnatural
+\cf0 2. Advanced Java \'96 We used a stack in State and it was useful because the Chip8 processor will store instructions occasionally in a First in Last out (FILO) fashion. This is also accomplished with a stack in the architecture of the CPU.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl288\slmult1\pardirnatural
+\cf0 \
+The work breakdown was as follows: \
+Nadine: KeyListener.java, Window.java\
+David: Chip8.java, CPU.java, State.java\
+Dhruv: ApplicationLoader.java, user manual.txt, summary.txt}

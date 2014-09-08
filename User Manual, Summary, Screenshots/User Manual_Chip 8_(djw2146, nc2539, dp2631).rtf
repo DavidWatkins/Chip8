@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl288\slmult1\pardirnatural
+
+\f0\fs24 \cf0 User Manual \'96 Chip 8 Emulator \
+Coded by David Watkins (djw2146), Nai Chen Chang (nc2539), and Dhruv Purushottam (dp2631)\
+\
+The assignment packet contains the following files: \
+ApplicationLoader.java\
+KeyListener.java\
+MainCanvas.java\
+Window.java\
+Chip8.java\
+Chip8Runner.java\
+CPU.java\
+State.java\
+airplane.ch8\
+pong,c8\
+User manual\
+Summary\
+Screenshots\
+\
+How to run the program: \
+\
+1. The emulator can be started via the Chip8Runner program. This displays a blank emulator window, which will have a button called 'File'. \
+2. Using this, you may create a new game. You must create a new game by selecting a ROM file (pong and airplane have been provided as working samples). \
+3. The game controls vary according to what game is being played, but they're all controlled via the keyboard, specifically 16 keys (1-4, Q-R, A-F, Z-V). This makes it reasonably simple to figure out the controls by toying around a little. \
+4. On our computers, pong is played using 1 and Q for the left player, 4 and R for the right. In airplane, bombs are dropped using the S key.\
+5. The progress of these games can be saved by selecting the Save option which drops down from File. In this case, the saved file will be saved in the desired location as a '.sav' file and to access the saved game, the '.sav' file must be used and not the original ROM file.\
+\
+Minor issues: \
+1. The GUI components that can move within the game in the emulator window keep flashing. We think this is because these programs aren't usually run in java. As such, the screenshots included show missing components. Example: in pong, a paddle or one of the player's scores might be missing. The game is still fully functional.\
+\
+2. If the sound doesn't work, this is likely due to the face that the Button10.wav file has not been included in the project folder. In this case, one needs to simply click and drag it to the project file.\
+}
